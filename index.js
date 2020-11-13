@@ -14,12 +14,40 @@ let topMovies = [
     {
         title: 'Spirited Away',
         director: 'Hayao Miyazaki'
-    }
+    },
+    {
+        title:
+        director
+    },
+    {
+        title:
+        director
+    },
+    {
+        title:
+        director
+    },
+    {
+        title:
+        director
+    },
+    {
+        title:
+        director
+    },
+    {
+        title:
+        director
+    },
+    {
+        title:
+        director
+    },
 ];
 
 //GET requests
 app.get('/', (req, res) => {
-    res.send('Welcome to my movie club');
+    res.send('Welcome to my list of top movies!');
 });
 
 app.get('/documentation', (req, res) => {
