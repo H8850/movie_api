@@ -51,7 +51,7 @@ let topMovies = [
 
 app.use(morgan('common'));
 
-app.use(bodyParser.ulencoded({
+app.use(bodyParser.urlencoded({
     extended: true
 }));
 
