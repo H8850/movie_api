@@ -1,4 +1,6 @@
-const = require ('express');
+const express = require ('express');
+const morgan = require ('morgan');
+
 const app = express();
 
 //creates an array of objects
@@ -16,34 +18,36 @@ let topMovies = [
         director: 'Hayao Miyazaki'
     },
     {
-        title:
-        director
+        title: 'example',
+        director: 'example'
     },
     {
-        title:
-        director
+        title: 'example',
+        director: 'example'
     },
     {
-        title:
-        director
+        title: 'example',
+        director: 'example'
     },
     {
-        title:
-        director
+        title: 'example',
+        director: 'example'
     },
     {
-        title:
-        director
+        title: 'example',
+        director: 'example'
     },
     {
-        title:
-        director
+        title: 'example',
+        director: 'example'
     },
     {
-        title:
-        director
-    },
+        title: 'example',
+        director: 'example'
+    }
 ];
+
+app.use(morgan('common'));
 
 //GET requests
 app.get('/', (req, res) => {
