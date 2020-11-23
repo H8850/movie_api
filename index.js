@@ -9,8 +9,11 @@ const app = express();
 
 let users = [
     {
-        name: 'John Doe',
-        favouriteMovies: []
+        userName: 'John Doe',
+        userPassword: ,
+        userEmail: ,
+        userBirthdate:
+
     },
 ]
 
