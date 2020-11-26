@@ -7,15 +7,7 @@ const app = express();
 
 //creates an array of users
 
-let users = [
-    {
-        userName: 'John Doe',
-        userPassword: ,
-        userEmail: ,
-        userBirthdate:
 
-    },
-]
 
 
 //creates an array of objects
@@ -101,8 +93,12 @@ app.get('/movies/:title', (req, res) => {
 });
 
 // gets data of movies by a genre
+app.get('/movies/genres/:title', (req, res) => {
+    res.write('Here is a movie by genre');
+});
 
 // gets data about a director by name
+
 
 // posts a new user to the server
 app.post('/users', (req, res) => {
@@ -119,20 +115,24 @@ app.post('/users', (req, res) => {
 });
 
 // puts an update of user info
-app.put('/users/:name/:favouriteMovies', (req, res) => {
-    let user = users.find((user) => { return user.name
-    === req.params.name});
-
-    if(user) {
-        student.cla
-    }
-})
+app.put('/users/:name/:password/:email/:birthdate', (req, res) => {
+   res.send('You updated user info!')
+});
 
 // puts a movie in the users list of favourites
+app.put('/users/myMovies', (req, res) => {
+    res.send('You have added a movie to your list of favourites')
+});
 
 // deletes a movie from the users list of favourites
+app.delete('/users/myMovies/:title', (req, res) => {
+    res.send ('you have deleted a movie from your list')
+});
 
 // delets a user profile from the server
+app.delete('/users/:userName', (req, res) => {
+    res.send('User has been deleted')
+});
 
 //listen for requests
 
